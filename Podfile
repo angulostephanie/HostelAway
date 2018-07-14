@@ -7,7 +7,7 @@ target 'HomeAwayHack' do
 
   # Pods for HomeAwayHack
   pod 'Firebase/Core'
-
+  pod 'GoogleSignIn'
   target 'HomeAwayHackTests' do
     inherit! :search_paths
     # Pods for testing
