@@ -166,8 +166,11 @@
                     </view>
                     <connections>
                         <outlet property="dateTextField" destination="nZf-NR-BNK" id="K7q-1b-XbS"/>
+                        <outlet property="fromDateTextField" destination="nZf-NR-BNK" id="HqO-YS-NUw"/>
                         <outlet property="locationTextField" destination="4W1-4Q-88p" id="IHs-d8-r2R"/>
+                        <outlet property="maxPriceTextField" destination="CVf-vO-4GD" id="IXE-q8-kPE"/>
                         <outlet property="numberPeopleTextField" destination="oJk-Wy-k1F" id="Aif-bI-KFn"/>
+                        <outlet property="toDateTextField" destination="6nG-wh-VWQ" id="XAb-EJ-KUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9i8-nH-GZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
