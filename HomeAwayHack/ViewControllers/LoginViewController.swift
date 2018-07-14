@@ -12,12 +12,10 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
-@IBOutlet weak var signInButton: GIDSignInButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+      
 
         // Do any additional setup after loading the view.
     }
@@ -28,7 +26,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     
   @IBAction func onLoginBtn(_ sender: Any) {
-    self.performSegue(withIdentifier: "loginToFilterSegue", sender: nil)
+    print("signing in")
+    GIDSignIn.sharedInstance().signIn()
+
+    if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+        self.performSegue(withIdentifier: "loginToFilterSegue", sender: nil)
+      }
   }
   
     /*
