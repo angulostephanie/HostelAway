@@ -25,6 +25,7 @@
 		8807D07120FAC19E0029B32C /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */; };
 		8807D07320FAC1B20029B32C /* ViewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */; };
 		8807D07520FAC2020029B32C /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07420FAC2020029B32C /* RequestDetailViewController.swift */; };
+		8807D07720FAC4100029B32C /* BookItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07620FAC4100029B32C /* BookItViewController.swift */; };
 		D586CC00C809CC0759F032B3 /* Pods_HomeAwayHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */; };
 		E1ACDFF20B85805085669E07 /* Pods_HomeAwayHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
 		8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRequestViewController.swift; sourceTree = "<group>"; };
 		8807D07420FAC2020029B32C /* RequestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
+		8807D07620FAC4100029B32C /* BookItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItViewController.swift; sourceTree = "<group>"; };
 		969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.release.xcconfig"; sourceTree = "<group>"; };
 		A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DD7AD9490A8C72D21DBBE8 /* Pods-HomeAwayHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */,
 				8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */,
 				8807D07420FAC2020029B32C /* RequestDetailViewController.swift */,
+				8807D07620FAC4100029B32C /* BookItViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */,
 				3B7E32FA20FAA44B0080A451 /* DetailViewController.swift in Sources */,
 				3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */,
+				8807D07720FAC4100029B32C /* BookItViewController.swift in Sources */,
 				8807D07520FAC2020029B32C /* RequestDetailViewController.swift in Sources */,
 				8807D07120FAC19E0029B32C /* ListingTableViewCell.swift in Sources */,
 				8807D07320FAC1B20029B32C /* ViewRequestViewController.swift in Sources */,

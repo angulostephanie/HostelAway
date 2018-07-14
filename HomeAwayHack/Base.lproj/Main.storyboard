@@ -246,6 +246,7 @@
                     <connections>
                         <outlet property="requestTableView" destination="P6U-ML-Hrk" id="70y-c1-Mij"/>
                         <segue destination="CcJ-4c-1zU" kind="show" identifier="viewRequestDetailSegue" id="cXj-uO-9tq"/>
+                        <segue destination="cZl-Tr-rim" kind="show" identifier="bookItSegue" id="E5H-XN-CU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yD2-Ws-Auc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,6 +282,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkh-wO-uvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1074" y="931"/>
+        </scene>
+        <!--Book It View Controller-->
+        <scene sceneID="rNc-Kj-d3I">
+            <objects>
+                <viewController id="cZl-Tr-rim" customClass="BookItViewController" customModule="HomeAwayHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iWL-HK-Dux">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You now have enough people to book! Would you like to book?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x9o-qJ-ydm">
+                                <rect key="frame" x="67" y="101" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-Fc-yFh">
+                                <rect key="frame" x="161" y="220" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Book it!"/>
+                                <connections>
+                                    <action selector="bookItClicked:" destination="cZl-Tr-rim" eventType="touchUpInside" id="QcW-xc-o0Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DRF-DQ-R3i"/>
+                    </view>
+                    <connections>
+                        <outlet property="bookItLabel" destination="x9o-qJ-ydm" id="0jA-T7-bWl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb8-k9-01q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2249" y="825"/>
         </scene>
     </scenes>
 </document>
