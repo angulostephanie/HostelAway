@@ -10,6 +10,9 @@ import UIKit
 
 class FilterViewController: UIViewController {
 
+    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var numberPeopleTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("signed in nice")
