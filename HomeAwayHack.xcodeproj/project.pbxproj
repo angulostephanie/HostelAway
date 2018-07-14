@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2E3EF820FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */; };
+		3B2E3EF920FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */; };
+		3B2E3EFA20FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */; };
 		3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */; };
 		3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32C820FAA3BC0080A451 /* Main.storyboard */; };
 		3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32CB20FAA3BD0080A451 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 		3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F520FAA4360080A451 /* HomeViewController.swift */; };
 		3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F720FAA4430080A451 /* FilterViewController.swift */; };
 		3B7E32FA20FAA44B0080A451 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F920FAA44B0080A451 /* DetailViewController.swift */; };
+		64932A08BB56987043C2F185 /* Pods_HomeAwayHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */; };
+		D586CC00C809CC0759F032B3 /* Pods_HomeAwayHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */; };
+		E1ACDFF20B85805085669E07 /* Pods_HomeAwayHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B7E32C120FAA3BB0080A451 /* HomeAwayHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7E32C920FAA3BC0080A451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +61,14 @@
 		3B7E32F520FAA4360080A451 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B7E32F720FAA4430080A451 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		3B7E32F920FAA44B0080A451 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3C59FC4C243CBDE1593692DC /* Pods-HomeAwayHackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		401F834597A84F539273409D /* Pods-HomeAwayHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.debug.xcconfig"; sourceTree = "<group>"; };
+		5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82285976A92EF95938C751FA /* Pods-HomeAwayHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackTests/Pods-HomeAwayHackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.release.xcconfig"; sourceTree = "<group>"; };
+		A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DD7AD9490A8C72D21DBBE8 /* Pods-HomeAwayHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B39C1B6534D09A34503F8439 /* Pods-HomeAwayHackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackTests/Pods-HomeAwayHackTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64932A08BB56987043C2F185 /* Pods_HomeAwayHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D586CC00C809CC0759F032B3 /* Pods_HomeAwayHackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1ACDFF20B85805085669E07 /* Pods_HomeAwayHackUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +106,8 @@
 				3B7E32D820FAA3BD0080A451 /* HomeAwayHackTests */,
 				3B7E32E320FAA3BD0080A451 /* HomeAwayHackUITests */,
 				3B7E32C220FAA3BB0080A451 /* Products */,
+				8384CAF67FA81790CEF267EE /* Pods */,
+				F2EE5149A81A8DEF733E9A61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +124,7 @@
 		3B7E32C320FAA3BB0080A451 /* HomeAwayHack */ = {
 			isa = PBXGroup;
 			children = (
+				3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */,
 				3B7E32F220FAA3EA0080A451 /* ViewControllers */,
 				3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */,
 				3B7E32C820FAA3BC0080A451 /* Main.storyboard */,
@@ -142,6 +164,29 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		8384CAF67FA81790CEF267EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				401F834597A84F539273409D /* Pods-HomeAwayHack.debug.xcconfig */,
+				969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */,
+				82285976A92EF95938C751FA /* Pods-HomeAwayHackTests.debug.xcconfig */,
+				B39C1B6534D09A34503F8439 /* Pods-HomeAwayHackTests.release.xcconfig */,
+				3C59FC4C243CBDE1593692DC /* Pods-HomeAwayHackUITests.debug.xcconfig */,
+				A6DD7AD9490A8C72D21DBBE8 /* Pods-HomeAwayHackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2EE5149A81A8DEF733E9A61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */,
+				A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */,
+				5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7E32E920FAA3BD0080A451 /* Build configuration list for PBXNativeTarget "HomeAwayHack" */;
 			buildPhases = (
+				3CBC544C71F94ECCC502306C /* [CP] Check Pods Manifest.lock */,
 				3B7E32BD20FAA3BB0080A451 /* Sources */,
 				3B7E32BE20FAA3BB0080A451 /* Frameworks */,
 				3B7E32BF20FAA3BB0080A451 /* Resources */,
+				60D2392D45F16B0238093651 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7E32EC20FAA3BD0080A451 /* Build configuration list for PBXNativeTarget "HomeAwayHackTests" */;
 			buildPhases = (
+				614413A64548FD856E9316F6 /* [CP] Check Pods Manifest.lock */,
 				3B7E32D120FAA3BD0080A451 /* Sources */,
 				3B7E32D220FAA3BD0080A451 /* Frameworks */,
 				3B7E32D320FAA3BD0080A451 /* Resources */,
@@ -184,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7E32EF20FAA3BD0080A451 /* Build configuration list for PBXNativeTarget "HomeAwayHackUITests" */;
 			buildPhases = (
+				3ABE21A1DEB033663EFA6D1F /* [CP] Check Pods Manifest.lock */,
 				3B7E32DC20FAA3BD0080A451 /* Sources */,
 				3B7E32DD20FAA3BD0080A451 /* Frameworks */,
 				3B7E32DE20FAA3BD0080A451 /* Resources */,
@@ -247,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32CF20FAA3BD0080A451 /* LaunchScreen.storyboard in Resources */,
+				3B2E3EF820FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */,
 				3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */,
 				3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2E3EF920FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +314,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2E3EFA20FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ABE21A1DEB033663EFA6D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeAwayHackUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CBC544C71F94ECCC502306C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeAwayHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60D2392D45F16B0238093651 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		614413A64548FD856E9316F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeAwayHackTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B7E32BD20FAA3BB0080A451 /* Sources */ = {
@@ -448,6 +577,7 @@
 		};
 		3B7E32EA20FAA3BD0080A451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401F834597A84F539273409D /* Pods-HomeAwayHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,12 +591,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.homebodies.HomeAwayHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3B7E32EB20FAA3BD0080A451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,12 +611,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.homebodies.HomeAwayHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		3B7E32ED20FAA3BD0080A451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82285976A92EF95938C751FA /* Pods-HomeAwayHackTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +639,7 @@
 		};
 		3B7E32EE20FAA3BD0080A451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B39C1B6534D09A34503F8439 /* Pods-HomeAwayHackTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +661,7 @@
 		};
 		3B7E32F020FAA3BD0080A451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C59FC4C243CBDE1593692DC /* Pods-HomeAwayHackUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +682,7 @@
 		};
 		3B7E32F120FAA3BD0080A451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DD7AD9490A8C72D21DBBE8 /* Pods-HomeAwayHackUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -6,6 +6,7 @@ target 'HomeAwayHack' do
   use_frameworks!
 
   # Pods for HomeAwayHack
+  pod 'Firebase/Core'
 
   target 'HomeAwayHackTests' do
     inherit! :search_paths
