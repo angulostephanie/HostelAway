@@ -18,6 +18,7 @@ class BookItViewController: UIViewController {
     }
     
     @IBAction func bookItClicked(_ sender: Any) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.vrbo.com")!)
     }
     
     /*
