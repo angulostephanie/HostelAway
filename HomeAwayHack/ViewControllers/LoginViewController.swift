@@ -11,6 +11,7 @@ import Firebase
 import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate {
+    var homeAwayAPICLient = HomeAwayAPICLient.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()

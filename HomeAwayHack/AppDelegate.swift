@@ -10,6 +10,14 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+extension UIApplication {
+    var homeAwayAPICLient : HomeAwayAPICLient {
+        get {
+            return HomeAwayAPICLient.shared
+        }
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 

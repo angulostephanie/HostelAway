@@ -20,6 +20,13 @@
 		3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F520FAA4360080A451 /* HomeViewController.swift */; };
 		3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F720FAA4430080A451 /* FilterViewController.swift */; };
 		3B7E32FA20FAA44B0080A451 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F920FAA44B0080A451 /* DetailViewController.swift */; };
+		61023E4720FAB9D90040D9B1 /* HomeAwayAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4620FAB9D90040D9B1 /* HomeAwayAPIClient.swift */; };
+		61023E4A20FAC4010040D9B1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4920FAC4010040D9B1 /* Token.swift */; };
+		61023E4C20FAD2EB0040D9B1 /* ListingSearchPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4B20FAD2EB0040D9B1 /* ListingSearchPaginator.swift */; };
+		61023E5020FAD8730040D9B1 /* ListingSearchHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4F20FAD8730040D9B1 /* ListingSearchHit.swift */; };
+		61023E5220FADA550040D9B1 /* ListingLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5120FADA550040D9B1 /* ListingLocation.swift */; };
+		61023E5420FADAA20040D9B1 /* PriceQuoteBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5320FADAA20040D9B1 /* PriceQuoteBean.swift */; };
+		61023E5620FADB130040D9B1 /* ImageFileBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5520FADB130040D9B1 /* ImageFileBean.swift */; };
 		64932A08BB56987043C2F185 /* Pods_HomeAwayHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */; };
 		D586CC00C809CC0759F032B3 /* Pods_HomeAwayHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */; };
 		E1ACDFF20B85805085669E07 /* Pods_HomeAwayHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */; };
@@ -64,6 +71,13 @@
 		3C59FC4C243CBDE1593692DC /* Pods-HomeAwayHackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		401F834597A84F539273409D /* Pods-HomeAwayHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61023E4620FAB9D90040D9B1 /* HomeAwayAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAwayAPIClient.swift; sourceTree = "<group>"; };
+		61023E4920FAC4010040D9B1 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		61023E4B20FAD2EB0040D9B1 /* ListingSearchPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingSearchPaginator.swift; sourceTree = "<group>"; };
+		61023E4F20FAD8730040D9B1 /* ListingSearchHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingSearchHit.swift; sourceTree = "<group>"; };
+		61023E5120FADA550040D9B1 /* ListingLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingLocation.swift; sourceTree = "<group>"; };
+		61023E5320FADAA20040D9B1 /* PriceQuoteBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceQuoteBean.swift; sourceTree = "<group>"; };
+		61023E5520FADB130040D9B1 /* ImageFileBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileBean.swift; sourceTree = "<group>"; };
 		82285976A92EF95938C751FA /* Pods-HomeAwayHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackTests/Pods-HomeAwayHackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.release.xcconfig"; sourceTree = "<group>"; };
 		A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +138,8 @@
 		3B7E32C320FAA3BB0080A451 /* HomeAwayHack */ = {
 			isa = PBXGroup;
 			children = (
+				61023E4820FAC3F80040D9B1 /* Models */,
+				61023E4520FAB9B90040D9B1 /* API */,
 				3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */,
 				3B7E32F220FAA3EA0080A451 /* ViewControllers */,
 				3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */,
@@ -162,6 +178,28 @@
 				3B7E32F920FAA44B0080A451 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61023E4520FAB9B90040D9B1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				61023E4620FAB9D90040D9B1 /* HomeAwayAPIClient.swift */,
+			);
+			name = API;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		61023E4820FAC3F80040D9B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61023E4920FAC4010040D9B1 /* Token.swift */,
+				61023E4B20FAD2EB0040D9B1 /* ListingSearchPaginator.swift */,
+				61023E4F20FAD8730040D9B1 /* ListingSearchHit.swift */,
+				61023E5120FADA550040D9B1 /* ListingLocation.swift */,
+				61023E5320FADAA20040D9B1 /* PriceQuoteBean.swift */,
+				61023E5520FADB130040D9B1 /* ImageFileBean.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8384CAF67FA81790CEF267EE /* Pods */ = {
@@ -434,8 +472,15 @@
 				3B7E32F420FAA3FA0080A451 /* LoginViewController.swift in Sources */,
 				3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */,
 				3B7E32FA20FAA44B0080A451 /* DetailViewController.swift in Sources */,
+				61023E5420FADAA20040D9B1 /* PriceQuoteBean.swift in Sources */,
+				61023E5020FAD8730040D9B1 /* ListingSearchHit.swift in Sources */,
+				61023E4A20FAC4010040D9B1 /* Token.swift in Sources */,
+				61023E5220FADA550040D9B1 /* ListingLocation.swift in Sources */,
 				3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */,
+				61023E4C20FAD2EB0040D9B1 /* ListingSearchPaginator.swift in Sources */,
+				61023E4720FAB9D90040D9B1 /* HomeAwayAPIClient.swift in Sources */,
 				3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */,
+				61023E5620FADB130040D9B1 /* ImageFileBean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
