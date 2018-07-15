@@ -31,11 +31,11 @@ class FilterViewController: UIViewController {
         if segue.destination is HomeViewController
         {
             let vc = segue.destination as? HomeViewController
-            vc?.numberPeopleTextField = numberPeopleTextField.text ?? ""
-            vc?.locationTextField = locationTextField.text ?? ""
-            vc?.fromDateTextField = fromDateTextField.text ?? ""
-            vc?.toDateTextField = toDateTextField.text ?? ""
-            vc?.maxPriceTextField = maxPriceTextField.text ?? ""
+            vc?.numberPeopleTextField = numberPeopleTextField.text ?? "2"
+            vc?.locationTextField = locationTextField.text ?? "austin"
+            vc?.fromDateTextField = fromDateTextField.text ?? "2018-07-20"
+            vc?.toDateTextField = toDateTextField.text ?? "2018-07-22"
+            vc?.maxPriceTextField = maxPriceTextField.text ?? "10000"
         }
     }
     

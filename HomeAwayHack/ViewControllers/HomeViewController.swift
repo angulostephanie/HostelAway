@@ -47,8 +47,8 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.rowHeight = 100
-        
+        tableView.rowHeight = 300
+        print(numberPeopleTextField)
         self.loadData();
     }
     
@@ -62,9 +62,11 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                     return
             }
             self.listings = listings
+            let group = DispatchGroup()
             if let entries = self.listings?.entries {
                 self.entries = entries
                 for entry in self.entries {
+                    group.enter()
                     guard
                         let title = entry.headline,
                         let description = entry.description,
@@ -84,12 +86,16 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                                 }
                                 DispatchQueue.main.async {
                                     self.entryCells.append(Entry(title: title, description: description, price: price, image: image, numPeople: Int(self.numberPeopleTextField)))
-                                    self.tableView.reloadRows(at: [IndexPath.init(index: self.entryCells.count - 1)], with: UITableViewRowAnimation.automatic)
+                                    print(self.entryCells)
+                                    group.leave()
                                 }
                             })
                         }
                     }
                 }
+            }
+            group.notify(queue: .main) {
+                self.tableView.reloadData()
             }
             self.loadingData = false;
         }
@@ -113,10 +119,10 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         cell.titleText.text = entryCells[indexPath.row].title
         cell.exampleImage.image = entryCells[indexPath.row].image
         if (entryCells[indexPath.row].price != nil) {
-            cell.priceLabel.text = "$ \(entryCells[indexPath.row].price)"
+            cell.priceLabel.text = "$ \(String(describing: entryCells[indexPath.row].price))"
         }
         if (entryCells[indexPath.row].numPeople != nil) {
-            cell.numSpots.text = "\(entryCells[indexPath.row].numPeople)"
+            cell.numSpots.text = "\(String(describing: entryCells[indexPath.row].numPeople))"
         }
         return cell
     }
