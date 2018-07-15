@@ -42,13 +42,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeAwayHack/ViewControllers/HomeViewController.swift"
-            timestampString = "553309626.391324"
+            timestampString = "553313578.075482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeAwayHack/ViewControllers/HomeViewController.swift"
+            timestampString = "553313578.076099"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeAwayHack/ViewControllers/HomeViewController.swift"
+            timestampString = "553313578.076849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeAwayHack.HomeViewController.fromDateTextField.getter : Swift.String"
+                  moduleName = "HomeAwayHack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/ViewControllers/HomeViewController.swift"
+                  timestampString = "553311740.282449"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeAwayHack.HomeViewController.fromDateTextField.setter : Swift.String"
+                  moduleName = "HomeAwayHack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/ViewControllers/HomeViewController.swift"
+                  timestampString = "553311740.284616"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeAwayHack.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; HomeAwayHack.HomeViewController"
+                  moduleName = "HomeAwayHack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/ViewControllers/HomeViewController.swift"
+                  timestampString = "553311740.286841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "455">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeAwayHack.HomeViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;HomeAwayHack.HomeViewController&gt;"
+                  moduleName = "HomeAwayHack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/ViewControllers/HomeViewController.swift"
+                  timestampString = "553311740.288942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

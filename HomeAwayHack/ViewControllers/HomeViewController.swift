@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource {
     
     var numberPeopleTextField: String = ""
     var locationTextField: String = ""
@@ -16,8 +16,12 @@ class HomeViewController: UIViewController {
     var toDateTextField: String = ""
     var maxPriceTextField: String = ""
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.rowHeight = 100
         print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
         // Do any additional setup after loading the view.
     }
@@ -30,6 +34,17 @@ class HomeViewController: UIViewController {
   @IBAction func onDetailBtn(_ sender: Any) {
     self.performSegue(withIdentifier: "homeToDetailSegue", sender: nil)
   }
+    let CellIdentifier = "listing"
+    let data = ["something"]
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! ListingTableViewCell
+        cell.titleText.text = data[indexPath.row]
+        return cell
+    }
   
     /*
     // MARK: - Navigation
