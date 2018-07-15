@@ -1,3 +1,4 @@
+
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
@@ -7,15 +8,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B2A416C20FAD80F004350E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A416B20FAD80F004350E1 /* GoogleService-Info.plist */; };
-		3B2A416D20FAD80F004350E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A416B20FAD80F004350E1 /* GoogleService-Info.plist */; };
-		3B2A416E20FAD80F004350E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A416B20FAD80F004350E1 /* GoogleService-Info.plist */; };
-		3B2A417020FAD89B004350E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A416F20FAD89B004350E1 /* User.swift */; };
-		3B2A417120FAD89B004350E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A416F20FAD89B004350E1 /* User.swift */; };
-		3B2A417220FAD89B004350E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A416F20FAD89B004350E1 /* User.swift */; };
-		3B2A417420FAD8E1004350E1 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A417320FAD8E1004350E1 /* Rental.swift */; };
-		3B2A417520FAD8E1004350E1 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A417320FAD8E1004350E1 /* Rental.swift */; };
-		3B2A417620FAD8E1004350E1 /* Rental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A417320FAD8E1004350E1 /* Rental.swift */; };
 		3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */; };
 		3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32C820FAA3BC0080A451 /* Main.storyboard */; };
 		3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32CB20FAA3BD0080A451 /* Assets.xcassets */; };
@@ -57,9 +49,6 @@
 
 /* Begin PBXFileReference section */
 		2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2A416B20FAD80F004350E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3B2A416F20FAD89B004350E1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		3B2A417320FAD8E1004350E1 /* Rental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental.swift; sourceTree = "<group>"; };
 		3B7E32C120FAA3BB0080A451 /* HomeAwayHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7E32C920FAA3BC0080A451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,8 +113,6 @@
 		3B2E3EFC20FABA8C00BE7BD9 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				3B2A416F20FAD89B004350E1 /* User.swift */,
-				3B2A417320FAD8E1004350E1 /* Rental.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -335,11 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32CF20FAA3BD0080A451 /* LaunchScreen.storyboard in Resources */,
-<<<<<<< HEAD
-				3B2A416C20FAD80F004350E1 /* GoogleService-Info.plist in Resources */,
-=======
 				8807D07B20FAD9E70029B32C /* GoogleService-Info.plist in Resources */,
->>>>>>> 1adff62ceb776db4f412260055c361788970bf65
 				3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */,
 				3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */,
 			);
@@ -349,7 +332,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2A416D20FAD80F004350E1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2A416E20FAD80F004350E1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +458,8 @@
 				8807D07720FAC4100029B32C /* BookItViewController.swift in Sources */,
 				8807D07520FAC2020029B32C /* RequestDetailViewController.swift in Sources */,
 				8807D07120FAC19E0029B32C /* ListingTableViewCell.swift in Sources */,
-				3B2A417020FAD89B004350E1 /* User.swift in Sources */,
 				8807D07320FAC1B20029B32C /* ViewRequestViewController.swift in Sources */,
 				3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */,
-				3B2A417420FAD8E1004350E1 /* Rental.swift in Sources */,
 				8807D06F20FAC1950029B32C /* RequestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,9 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2A417120FAD89B004350E1 /* User.swift in Sources */,
 				3B7E32DA20FAA3BD0080A451 /* HomeAwayHackTests.swift in Sources */,
-				3B2A417520FAD8E1004350E1 /* Rental.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,9 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2A417220FAD89B004350E1 /* User.swift in Sources */,
 				3B7E32E520FAA3BD0080A451 /* HomeAwayHackUITests.swift in Sources */,
-				3B2A417620FAD8E1004350E1 /* Rental.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
