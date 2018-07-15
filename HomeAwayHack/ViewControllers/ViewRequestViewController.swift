@@ -25,6 +25,7 @@ class ViewRequestViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "request", for: indexPath) as! RequestTableViewCell
+        cell.backgroundColor = UIColor.white
         cell.requestLabel.text = entries[indexPath.row]
         return cell
     }
