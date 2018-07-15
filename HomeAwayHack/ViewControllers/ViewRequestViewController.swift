@@ -10,7 +10,7 @@ import UIKit
 
 class ViewRequestViewController: UIViewController, UITableViewDataSource {
 
-    let entries = ["Request from Bill", "Request from Ming", "Request from Stephanie", "Request from Gregory", "Request from Kelly", "Request from Pedro", "Request from Sanodval"]
+    let entries = ["Request from Bonnie", "Request from Ming", "Request from Stephanie", "Request from Gregory", "Request from Kelly", "Request from Pedro", "Request from Sanodval"]
     @IBOutlet weak var requestTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()

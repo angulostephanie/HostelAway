@@ -18,6 +18,7 @@ class FilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Search for a rental!"
         // Do any additional setup after loading the view.
     }
 
