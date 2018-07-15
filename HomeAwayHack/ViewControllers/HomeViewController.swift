@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource {
     
+    var homeAwayAPICLient = HomeAwayAPICLient.shared
+    var listings: ListingSearchPaginator?
+    var entries: [ListingSearchHit] = []
+    
     var numberPeopleTextField: String = ""
     var locationTextField: String = ""
     var fromDateTextField: String = ""
@@ -22,8 +26,38 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.rowHeight = 100
-        print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
-        // Do any additional setup after loading the view.
+        
+        homeAwayAPICLient.search(locationTextField: locationTextField, numberPeopleTextField: numberPeopleTextField, maxPriceTextField: maxPriceTextField, fromDateTextField: fromDateTextField, toDateTextField: toDateTextField) { (ListingSearchPaginator) in
+            guard
+                let listings = ListingSearchPaginator
+                else {
+                    print("ERROR")
+                    return
+            }
+            self.listings = listings
+            if let entries = self.listings?.entries {
+                self.entries = entries
+            }
+            
+            for entries in self.entries {
+                if let uri = entries.thumbnail?.uri {
+                    let imageURL = URL(string: uri)
+                    if let imageURL =  imageURL {
+                        self.homeAwayAPICLient.downloadImage(url: imageURL, completion: { (image, error) in
+                            guard
+                                let image = image,
+                                error == nil
+                                else {
+                                    return
+                            }
+                            DispatchQueue.main.async {
+                                print(image)
+                            }
+                        })
+                    }
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

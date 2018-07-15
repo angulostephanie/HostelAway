@@ -9,6 +9,8 @@
 import Alamofire
 import AlamofireObjectMapper
 
+let imageCache = NSCache<NSString, UIImage>()
+
 public class HomeAwayAPICLient: NSObject {
     static let shared = HomeAwayAPICLient()
     
@@ -49,20 +51,44 @@ public class HomeAwayAPICLient: NSObject {
             })
         }
     }
+
+    public func search(locationTextField: String, numberPeopleTextField: String, maxPriceTextField: String, fromDateTextField: String, toDateTextField: String, completion: @escaping (ListingSearchPaginator?) -> ()) {
+        if let url = URL(string: "https://ws.homeaway.com/public/search?q=\(locationTextField)&minSleeps=\(numberPeopleTextField)&maxPrice=\(maxPriceTextField)&availabilityStart=\(fromDateTextField)&availabilityEnd=\(toDateTextField)") {
+            self.manager.request(url, method: .get).responseObject(completionHandler: { (response: DataResponse<ListingSearchPaginator>) in
+                print(response)
+                switch response.result {
+                case .success(let searchResponse):
+                    print(searchResponse)
+                    completion(searchResponse)
+                case .failure(let error):
+                    print("ERROR: " + String(describing: error))
+                    completion(nil)
+                }
+            })
+        }
+    }
     
-//    public func search(id: String, completion: @escaping (CDYelpBusiness?) -> ()) {
-//        if let url = URL(string: "https://ws.homeaway.com/public/search\(id)") {
-//            self.manager.request(url).responseObject(completionHandler: { (response: DataResponse<CDYelpBusiness>) in
-//                switch response.result {
-//                case .success(let searchResponse):
-//                    completion(searchResponse)
-//                case .failure(let error):
-//                    print("ERROR: " + String(describing: error))
-//                    completion(nil)
-//                }
-//            })
-//        }
-//    }
-
-
+    public func downloadImage(url: URL, completion: @escaping (UIImage?, Error?) -> ()) {
+        if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
+            completion(cachedImage, nil)
+        } else {
+            self.getDataFromUrl(url: url, completion: { (data, response, error) in
+                guard
+                    let data = data,
+                    let image = UIImage(data: data),
+                    error == nil
+                    else {
+                        return
+                }
+                imageCache.setObject(image, forKey: url.absoluteString as NSString)
+                completion(image, nil)
+            })
+        }
+    }
+    
+    public func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            completion(data, response, error)
+            }.resume()
+    }
 }

@@ -12,11 +12,11 @@ import Firebase
 
 
 class TestViewController: UIViewController {
-  var ref: DatabaseReference!
+//  var ref: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Database.database().reference()
+//        ref = Database.database().reference()
         // Do any additional setup after loading the view.
     }
 
