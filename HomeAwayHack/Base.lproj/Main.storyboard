@@ -51,6 +51,9 @@
                                 <rect key="frame" x="112" y="171" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add button"/>
+                                <connections>
+                                    <action selector="addToFirebase:" destination="X11-o8-zme" eventType="touchUpInside" id="DtX-k9-fHY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaP-dn-8ax">
                                 <rect key="frame" x="137" y="270" width="107" height="21"/>
