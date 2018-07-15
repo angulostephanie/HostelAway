@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ok7-aV-oTv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,13 +30,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZRr-R7-inq"/>
                     <connections>
                         <segue destination="k5K-yO-6uK" kind="show" identifier="loginToFilterSegue" id="HOD-li-Z50"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189.59999999999999" y="-65.217391304347828"/>
+            <point key="canvasLocation" x="1128.8" y="-65.217391304347828"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="bwY-do-z72">
@@ -224,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9i8-nH-GZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.4000000000001" y="127.28635682158921"/>
+            <point key="canvasLocation" x="2013.5999999999999" y="127.28635682158921"/>
         </scene>
         <!--View Request View Controller-->
         <scene sceneID="K58-0q-gNG">
@@ -254,17 +255,23 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWT-2m-uBb">
-                                                    <rect key="frame" x="210" y="32" width="30" height="30"/>
+                                                    <rect key="frame" x="200" y="28" width="40" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Yes"/>
+                                                    <color key="backgroundColor" red="0.96862745100000003" green="0.86666666670000003" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="Yes">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="yesButtonPressed:" destination="5Fy-qA-FJZ" eventType="touchUpInside" id="L64-qC-ODS"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-ao-bnh">
-                                                    <rect key="frame" x="256" y="28" width="46" height="34"/>
+                                                    <rect key="frame" x="256" y="28" width="46" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="No"/>
+                                                    <color key="backgroundColor" red="0.96862745100000003" green="0.86666666670000003" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="No">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="noButtonPressed:" destination="5Fy-qA-FJZ" eventType="touchUpInside" id="7Qp-Dq-WPU"/>
                                                     </connections>
@@ -272,7 +279,10 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYt-EF-AWV">
                                                     <rect key="frame" x="314" y="28" width="46" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="View"/>
+                                                    <color key="backgroundColor" red="0.96862745100000003" green="0.86666666670000003" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="View">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="viewButtonPressed:" destination="5Fy-qA-FJZ" eventType="touchUpInside" id="01i-pd-Pb5"/>
                                                     </connections>
@@ -300,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yD2-Ws-Auc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1917.5999999999999" y="131.78410794602701"/>
+            <point key="canvasLocation" x="2856.8000000000002" y="131.78410794602701"/>
         </scene>
         <!--Request Detail View Controller-->
         <scene sceneID="KnI-Y2-XdV">
@@ -315,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYn-sY-2fm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557" y="135"/>
+            <point key="canvasLocation" x="3495.1999999999998" y="134.48275862068968"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="awN-aH-ua6">
@@ -410,10 +420,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You now have enough people to book! Would you like to book?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x9o-qJ-ydm">
-                                <rect key="frame" x="67" y="316" width="240" height="128"/>
+                                <rect key="frame" x="67" y="261" width="240" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -427,6 +437,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb8-k9-01q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2248.8000000000002" y="824.43778110944538"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ffB-iW-aly">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ok7-aV-oTv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jh6-jo-TNl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="udg-JX-ZTK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="819-uZ-yjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.59999999999999" y="-65.217391304347828"/>
         </scene>
     </scenes>
 </document>
