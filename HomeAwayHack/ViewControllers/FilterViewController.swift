@@ -41,7 +41,7 @@ class FilterViewController: UIViewController {
     }
     
   @IBAction func goToListingPage(_ sender: Any) {
-    self.performSegue(withIdentifier: "filterToHomeSegue", sender: nil)
+    //self.performSegue(withIdentifier: "filterToHomeSegue", sender: nil)
   }
   
     /*
