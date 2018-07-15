@@ -6,79 +6,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HomeAwayHack/AppDelegate.swift"
-            timestampString = "553306040.9355741"
+            timestampString = "553306436.01285"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
             landmarkName = "unknown"
             landmarkType = "0">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HomeAwayHack.AppDelegate.__deallocating_deinit"
-                  moduleName = "HomeAwayHack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/AppDelegate.swift"
-                  timestampString = "553306041.086313"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HomeAwayHack.AppDelegate.__allocating_init() -&gt; HomeAwayHack.AppDelegate"
-                  moduleName = "HomeAwayHack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/AppDelegate.swift"
-                  timestampString = "553306041.0883369"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HomeAwayHack.AppDelegate.init() -&gt; HomeAwayHack.AppDelegate"
-                  moduleName = "HomeAwayHack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/AppDelegate.swift"
-                  timestampString = "553306041.090287"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "main"
-                  moduleName = "HomeAwayHack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/minghorn/HomeAwayHack/HomeAwayHack/AppDelegate.swift"
-                  timestampString = "553306041.092093"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeAwayHack/AppDelegate.swift"
+            timestampString = "553306436.013275"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -87,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HomeAwayHack/AppDelegate.swift"
-            timestampString = "553306040.935721"
+            filePath = "HomeAwayHack/ViewControllers/HomeViewController.swift"
+            timestampString = "553306722.7963721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -33,7 +33,7 @@ class FilterViewController: UIViewController {
         {
             let vc = segue.destination as? HomeViewController
             vc?.numberPeopleTextField = numberPeopleTextField.text ?? ""
-            vc?.locationTextField = numberPeopleTextField.text ?? ""
+            vc?.locationTextField = locationTextField.text ?? ""
             vc?.fromDateTextField = fromDateTextField.text ?? ""
             vc?.toDateTextField = toDateTextField.text ?? ""
             vc?.maxPriceTextField = maxPriceTextField.text ?? ""
