@@ -119,10 +119,12 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         cell.titleText.text = entryCells[indexPath.row].title
         cell.exampleImage.image = entryCells[indexPath.row].image
         if (entryCells[indexPath.row].price != nil) {
-            cell.priceLabel.text = "$ \(String(describing: entryCells[indexPath.row].price))"
+            let price = String(describing: entryCells[indexPath.row].price!)
+            cell.priceLabel.text = "$\(price)"
         }
         if (entryCells[indexPath.row].numPeople != nil) {
-            cell.numSpots.text = "\(String(describing: entryCells[indexPath.row].numPeople))"
+            let numPeopleString = String(describing: entryCells[indexPath.row].numPeople!)
+            cell.numSpots.text = "\(numPeopleString) people"
         }
         return cell
     }
