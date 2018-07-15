@@ -13,9 +13,6 @@ class User: NSObject {
   public var lastName: String?
   public var userID: String?
   
-  init(map: Map) {
-  
-  }
   init(firstName: String, lastName:String, userID: String) {
     self.firstName = firstName
     self.lastName = lastName
