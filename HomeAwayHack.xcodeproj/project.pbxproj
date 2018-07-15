@@ -108,6 +108,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B2E3EFC20FABA8C00BE7BD9 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		3B7E32B820FAA3BB0080A451 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +140,8 @@
 		3B7E32C320FAA3BB0080A451 /* HomeAwayHack */ = {
 			isa = PBXGroup;
 			children = (
-				7A93A50320FAC4EB00037E55 /* GoogleService-Info.plist */,
+				3B2E3EFC20FABA8C00BE7BD9 /* Firebase */,
+				3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */,
 				3B7E32F220FAA3EA0080A451 /* ViewControllers */,
 				3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */,
 				3B7E32C820FAA3BC0080A451 /* Main.storyboard */,
@@ -397,21 +405,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
