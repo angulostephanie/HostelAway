@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3726F220FB88190073F94D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3726F120FB88190073F94D /* GoogleService-Info.plist */; };
 		3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */; };
 		3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32C820FAA3BC0080A451 /* Main.storyboard */; };
 		3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32CB20FAA3BD0080A451 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3726F120FB88190073F94D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B7E32C120FAA3BB0080A451 /* HomeAwayHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7E32C920FAA3BC0080A451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 		3B7E32C320FAA3BB0080A451 /* HomeAwayHack */ = {
 			isa = PBXGroup;
 			children = (
-				88E176DA20FB88D900D0375F /* GoogleService-Info.plist */,
+				3B3726F120FB88190073F94D /* GoogleService-Info.plist */,
 				61023E4820FAC3F80040D9B1 /* Models */,
 				61023E4520FAB9B90040D9B1 /* API */,
 				3B2E3EFC20FABA8C00BE7BD9 /* Firebase */,
@@ -370,7 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32CF20FAA3BD0080A451 /* LaunchScreen.storyboard in Resources */,
-				88E176DB20FB88D900D0375F /* GoogleService-Info.plist in Resources */,
+				3B3726F220FB88190073F94D /* GoogleService-Info.plist in Resources */,
 				3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */,
 				3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */,
 			);
@@ -701,7 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KB444ZFSFL;
+				DEVELOPMENT_TEAM = MSDKGG6G29;
 				INFOPLIST_FILE = HomeAwayHack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -721,7 +723,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KB444ZFSFL;
+				DEVELOPMENT_TEAM = MSDKGG6G29;
 				INFOPLIST_FILE = HomeAwayHack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
