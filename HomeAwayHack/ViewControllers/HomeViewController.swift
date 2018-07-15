@@ -9,10 +9,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var numberPeopleTextField: String = ""
+    var locationTextField: String = ""
+    var fromDateTextField: String = ""
+    var toDateTextField: String = ""
+    var maxPriceTextField: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
         // Do any additional setup after loading the view.
     }
 

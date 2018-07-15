@@ -27,6 +27,19 @@ class FilterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is HomeViewController
+        {
+            let vc = segue.destination as? HomeViewController
+            vc?.numberPeopleTextField = numberPeopleTextField.text ?? ""
+            vc?.locationTextField = numberPeopleTextField.text ?? ""
+            vc?.fromDateTextField = fromDateTextField.text ?? ""
+            vc?.toDateTextField = toDateTextField.text ?? ""
+            vc?.maxPriceTextField = maxPriceTextField.text ?? ""
+        }
+    }
+    
   @IBAction func goToListingPage(_ sender: Any) {
     self.performSegue(withIdentifier: "filterToHomeSegue", sender: nil)
   }
