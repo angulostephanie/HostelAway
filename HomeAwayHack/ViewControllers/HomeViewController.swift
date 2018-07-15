@@ -52,6 +52,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         tableView.rowHeight = 300
         print(numberPeopleTextField)
         self.loadData();
+        self.title = "Homes Available"
     }
     
     func loadData() {
