@@ -1,3 +1,4 @@
+
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
@@ -7,9 +8,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B2E3EF820FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */; };
-		3B2E3EF920FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */; };
-		3B2E3EFA20FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */; };
 		3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */; };
 		3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32C820FAA3BC0080A451 /* Main.storyboard */; };
 		3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E32CB20FAA3BD0080A451 /* Assets.xcassets */; };
@@ -28,6 +26,13 @@
 		61023E5420FADAA20040D9B1 /* PriceQuoteBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5320FADAA20040D9B1 /* PriceQuoteBean.swift */; };
 		61023E5620FADB130040D9B1 /* ImageFileBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5520FADB130040D9B1 /* ImageFileBean.swift */; };
 		64932A08BB56987043C2F185 /* Pods_HomeAwayHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */; };
+		8807D06F20FAC1950029B32C /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D06E20FAC1950029B32C /* RequestTableViewCell.swift */; };
+		8807D07120FAC19E0029B32C /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */; };
+		8807D07320FAC1B20029B32C /* ViewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */; };
+		8807D07520FAC2020029B32C /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07420FAC2020029B32C /* RequestDetailViewController.swift */; };
+		8807D07720FAC4100029B32C /* BookItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07620FAC4100029B32C /* BookItViewController.swift */; };
+		8807D07920FAC5DE0029B32C /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07820FAC5DE0029B32C /* ApplyViewController.swift */; };
+		8807D07B20FAD9E70029B32C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8807D07A20FAD9E70029B32C /* GoogleService-Info.plist */; };
 		D586CC00C809CC0759F032B3 /* Pods_HomeAwayHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */; };
 		E1ACDFF20B85805085669E07 /* Pods_HomeAwayHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B7E32C120FAA3BB0080A451 /* HomeAwayHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7E32C920FAA3BC0080A451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,13 @@
 		61023E5320FADAA20040D9B1 /* PriceQuoteBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceQuoteBean.swift; sourceTree = "<group>"; };
 		61023E5520FADB130040D9B1 /* ImageFileBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileBean.swift; sourceTree = "<group>"; };
 		82285976A92EF95938C751FA /* Pods-HomeAwayHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackTests/Pods-HomeAwayHackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8807D06E20FAC1950029B32C /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
+		8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRequestViewController.swift; sourceTree = "<group>"; };
+		8807D07420FAC2020029B32C /* RequestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
+		8807D07620FAC4100029B32C /* BookItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItViewController.swift; sourceTree = "<group>"; };
+		8807D07820FAC5DE0029B32C /* ApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
+		8807D07A20FAD9E70029B32C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.release.xcconfig"; sourceTree = "<group>"; };
 		A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DD7AD9490A8C72D21DBBE8 /* Pods-HomeAwayHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +124,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B2E3EFC20FABA8C00BE7BD9 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		3B7E32B820FAA3BB0080A451 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +158,8 @@
 			children = (
 				61023E4820FAC3F80040D9B1 /* Models */,
 				61023E4520FAB9B90040D9B1 /* API */,
-				3B2E3EF720FAAA9800BE7BD9 /* GoogleService-Info.plist */,
+				8807D07A20FAD9E70029B32C /* GoogleService-Info.plist */,
+				3B2E3EFC20FABA8C00BE7BD9 /* Firebase */,
 				3B7E32F220FAA3EA0080A451 /* ViewControllers */,
 				3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */,
 				3B7E32C820FAA3BC0080A451 /* Main.storyboard */,
@@ -176,6 +195,12 @@
 				3B7E32F520FAA4360080A451 /* HomeViewController.swift */,
 				3B7E32F720FAA4430080A451 /* FilterViewController.swift */,
 				3B7E32F920FAA44B0080A451 /* DetailViewController.swift */,
+				8807D06E20FAC1950029B32C /* RequestTableViewCell.swift */,
+				8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */,
+				8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */,
+				8807D07420FAC2020029B32C /* RequestDetailViewController.swift */,
+				8807D07620FAC4100029B32C /* BookItViewController.swift */,
+				8807D07820FAC5DE0029B32C /* ApplyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -335,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32CF20FAA3BD0080A451 /* LaunchScreen.storyboard in Resources */,
-				3B2E3EF820FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */,
+				8807D07B20FAD9E70029B32C /* GoogleService-Info.plist in Resources */,
 				3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */,
 				3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */,
 			);
@@ -345,7 +370,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2E3EF920FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +377,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2E3EFA20FAAA9800BE7BD9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,21 +445,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,11 +495,17 @@
 				61023E5020FAD8730040D9B1 /* ListingSearchHit.swift in Sources */,
 				61023E4A20FAC4010040D9B1 /* Token.swift in Sources */,
 				61023E5220FADA550040D9B1 /* ListingLocation.swift in Sources */,
-				3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */,
 				61023E4C20FAD2EB0040D9B1 /* ListingSearchPaginator.swift in Sources */,
 				61023E4720FAB9D90040D9B1 /* HomeAwayAPIClient.swift in Sources */,
-				3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */,
 				61023E5620FADB130040D9B1 /* ImageFileBean.swift in Sources */,
+				8807D07920FAC5DE0029B32C /* ApplyViewController.swift in Sources */,
+				3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */,
+				8807D07720FAC4100029B32C /* BookItViewController.swift in Sources */,
+				8807D07520FAC2020029B32C /* RequestDetailViewController.swift in Sources */,
+				8807D07120FAC19E0029B32C /* ListingTableViewCell.swift in Sources */,
+				8807D07320FAC1B20029B32C /* ViewRequestViewController.swift in Sources */,
+				3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */,
+				8807D06F20FAC1950029B32C /* RequestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MSDKGG6G29;
+				DEVELOPMENT_TEAM = KB444ZFSFL;
 				INFOPLIST_FILE = HomeAwayHack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -675,7 +700,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MSDKGG6G29;
+				DEVELOPMENT_TEAM = KB444ZFSFL;
 				INFOPLIST_FILE = HomeAwayHack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (

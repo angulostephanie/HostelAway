@@ -7,10 +7,9 @@ target 'HomeAwayHack' do
 
   # Pods for HomeAwayHack
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'Alamofire', '~> 4.7'
-  pod 'AlamofireObjectMapper', '~> 5.0'
-  pod 'ObjectMapper', '~> 3.1'
 
   target 'HomeAwayHackTests' do
     inherit! :search_paths

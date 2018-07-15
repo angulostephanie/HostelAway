@@ -23,12 +23,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
   var window: UIWindow?
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     FirebaseApp.configure()
     GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
     GIDSignIn.sharedInstance().delegate = self
+    GIDSignIn.sharedInstance().delegate = self
+    /* check for user's token */
+    if GIDSignIn.sharedInstance().currentUser != nil {
+      let sb = UIStoryboard(name: "Main", bundle: nil)
+      if let filterVC = sb.instantiateViewController(withIdentifier: "Filter") as UIViewController? {
+        print("Hi " + GIDSignIn.sharedInstance().currentUser.profile.name)
+        window?.rootViewController = filterVC
+        print("already signed in")
+      } else {
+      /* code to show your login VC */
+      }
+    
+    }
     return true
   }
 
@@ -58,24 +70,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
   func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
       return GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
   }
-  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+  
+  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     // ...
     if let error = error {
       // ...
+      print(error.localizedDescription)
       return
     }
 
-//    guard let authentication = user.authentication else { return }
-//    let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-//                                                      accessToken: authentication.accessToken)
-//    // ...
+    guard let authentication = user.authentication else { return }
+    let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+    Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+    if let error = error {
+      print(error.localizedDescription)
+      return
+    }
+    print("successful")
+
+    }
   }
-
-  func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-      // Perform any operations when the user disconnects from app here.
-      // ...
-  }
-
-
 }
 

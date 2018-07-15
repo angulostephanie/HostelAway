@@ -10,6 +10,12 @@ import UIKit
 
 class FilterViewController: UIViewController {
 
+    @IBOutlet weak var numberPeopleTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var fromDateTextField: UITextField!
+    @IBOutlet weak var toDateTextField: UITextField!
+    @IBOutlet weak var maxPriceTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("signed in nice")
@@ -19,6 +25,19 @@ class FilterViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is HomeViewController
+        {
+            let vc = segue.destination as? HomeViewController
+            vc?.numberPeopleTextField = numberPeopleTextField.text ?? ""
+            vc?.locationTextField = locationTextField.text ?? ""
+            vc?.fromDateTextField = fromDateTextField.text ?? ""
+            vc?.toDateTextField = toDateTextField.text ?? ""
+            vc?.maxPriceTextField = maxPriceTextField.text ?? ""
+        }
     }
     
   @IBAction func goToListingPage(_ sender: Any) {
