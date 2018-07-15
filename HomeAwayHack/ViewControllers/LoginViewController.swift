@@ -27,6 +27,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
       let buttonFrame : CGRect = CGRect.init(x: 0, y: 0, width: 100, height: 50)
       let gdSignInButton = GIDSignInButton.init(frame:buttonFrame)
         gdSignInButton.style = GIDSignInButtonStyle.wide
+        gdSignInButton.layer.cornerRadius = 5
         gdSignInButton.center = view.center
         view.addSubview(gdSignInButton)
         // Do any additional setup after loading the view.
