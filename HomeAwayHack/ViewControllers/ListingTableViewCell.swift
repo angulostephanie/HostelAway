@@ -13,6 +13,7 @@ class ListingTableViewCell: UITableViewCell {
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var exampleImage: UIImageView!
     @IBOutlet weak var numSpots: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     var data: ListingSearchHit? = nil
     

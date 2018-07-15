@@ -8,11 +8,32 @@
 
 import UIKit
 
+class Entry {
+    let title: String?
+    let description: String?
+    let price: Double?
+    var image: UIImage?
+    let numPeople: Int?
+    
+    init(title: String?, description: String?, price: Double?, image: UIImage?, numPeople: Int?) {
+        self.title = title
+        self.description = description
+        self.price = price
+        self.image = image
+        self.numPeople = numPeople
+    }
+    
+    public func setImage(_ image: UIImage) {
+        self.image = image
+    }
+}
+
 class HomeViewController: UIViewController, UITableViewDataSource {
     
     var homeAwayAPICLient = HomeAwayAPICLient.shared
     var listings: ListingSearchPaginator?
     var entries: [ListingSearchHit] = []
+    var entryCells: [Entry] = []
     var loadingData = false;
     
     var numberPeopleTextField: String = ""
@@ -43,24 +64,30 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             self.listings = listings
             if let entries = self.listings?.entries {
                 self.entries = entries
-                self.tableView.reloadData()
-            }
-            
-            for entries in self.entries {
-                if let uri = entries.thumbnail?.uri {
-                    let imageURL = URL(string: uri)
-                    if let imageURL =  imageURL {
-                        self.homeAwayAPICLient.downloadImage(url: imageURL, completion: { (image, error) in
-                            guard
-                                let image = image,
-                                error == nil
-                                else {
-                                    return
-                            }
-                            DispatchQueue.main.async {
-                                print(image)
-                            }
-                        })
+                for entry in self.entries {
+                    guard
+                        let title = entry.headline,
+                        let description = entry.description,
+                        let price = entry.priceQuote?.amount
+                        else {
+                            return
+                    }
+                    if let uri = entry.thumbnail?.uri {
+                        let imageURL = URL(string: uri)
+                        if let imageURL =  imageURL {
+                            self.homeAwayAPICLient.downloadImage(url: imageURL, completion: { (image, error) in
+                                guard
+                                    let image = image,
+                                    error == nil
+                                    else {
+                                        return
+                                }
+                                DispatchQueue.main.async {
+                                    self.entryCells.append(Entry(title: title, description: description, price: price, image: image, numPeople: Int(self.numberPeopleTextField)))
+                                    self.tableView.reloadRows(at: [IndexPath.init(index: self.entryCells.count - 1)], with: UITableViewRowAnimation.automatic)
+                                }
+                            })
+                        }
                     }
                 }
             }
@@ -83,8 +110,14 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! ListingTableViewCell
-        cell.titleText.text = entries[indexPath.row].headline
-        cell.accessoryType = .disclosureIndicator
+        cell.titleText.text = entryCells[indexPath.row].title
+        cell.exampleImage.image = entryCells[indexPath.row].image
+        if (entryCells[indexPath.row].price != nil) {
+            cell.priceLabel.text = "$ \(entryCells[indexPath.row].price)"
+        }
+        if (entryCells[indexPath.row].numPeople != nil) {
+            cell.numSpots.text = "\(entryCells[indexPath.row].numPeople)"
+        }
         return cell
     }
     
