@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="-118" y="842"/>
         </scene>
-        <!--Filter View Controller-->
+        <!--Filter-->
         <scene sceneID="GOt-FH-kb8">
             <objects>
-                <viewController id="k5K-yO-6uK" customClass="FilterViewController" customModule="HomeAwayHack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Filter" title="Filter" id="k5K-yO-6uK" customClass="FilterViewController" customModule="HomeAwayHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Phx-eS-ziE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
