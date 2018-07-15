@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource {
     
+    var homeAwayAPICLient = HomeAwayAPICLient.shared
+    var listings: ListingSearchPaginator?
+    var entries: [ListingSearchHit] = []
+    
     var numberPeopleTextField: String = ""
     var locationTextField: String = ""
     var fromDateTextField: String = ""
@@ -22,7 +26,26 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.rowHeight = 100
-        print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
+        
+        homeAwayAPICLient.search(locationTextField: locationTextField, numberPeopleTextField: numberPeopleTextField, maxPriceTextField: maxPriceTextField, fromDateTextField: fromDateTextField, toDateTextField: toDateTextField) { (ListingSearchPaginator) in
+            guard
+                let listings = ListingSearchPaginator
+                else {
+                    print("ERROR")
+                    return
+            }
+            self.listings = listings
+            if let entries = self.listings?.entries {
+                self.entries = entries
+            }
+            print(self.entries)
+            
+            
+
+        }
+        
+        
+//        print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
         // Do any additional setup after loading the view.
     }
 
