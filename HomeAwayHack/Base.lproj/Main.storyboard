@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="189.59999999999999" y="-65.217391304347828"/>
         </scene>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="bwY-do-z72">
             <objects>
-                <viewController id="X11-o8-zme" sceneMemberID="viewController">
+                <viewController id="X11-o8-zme" customClass="TestViewController" customModule="HomeAwayHack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uYT-cA-Voa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
