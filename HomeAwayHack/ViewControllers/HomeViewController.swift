@@ -38,15 +38,26 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             if let entries = self.listings?.entries {
                 self.entries = entries
             }
-            print(self.entries)
             
-            
-
+            for entries in self.entries {
+                if let uri = entries.thumbnail?.uri {
+                    let imageURL = URL(string: uri)
+                    if let imageURL =  imageURL {
+                        self.homeAwayAPICLient.downloadImage(url: imageURL, completion: { (image, error) in
+                            guard
+                                let image = image,
+                                error == nil
+                                else {
+                                    return
+                            }
+                            DispatchQueue.main.async {
+                                print(image)
+                            }
+                        })
+                    }
+                }
+            }
         }
-        
-        
-//        print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
