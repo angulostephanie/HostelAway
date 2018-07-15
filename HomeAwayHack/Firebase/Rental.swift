@@ -9,12 +9,15 @@
 import Foundation
 
 class Rental: NSObject {
-  var maxPeople: Int?
-  var currentPeople: Int?
-  var host: User?
-  var rentalID: String?
+  public var maxPeople: Int?
+  public var currentPeople: Int?
+  public var host: User?
+  public var rentalID: String?
   
   init(maxPeople:Int?, currentPeople: Int?, host:User?, rentalID:String?) {
-    
+    self.maxPeople = maxPeople
+    self.currentPeople = currentPeople
+    self.host = host
+    self.rentalID = rentalID
   }
 }

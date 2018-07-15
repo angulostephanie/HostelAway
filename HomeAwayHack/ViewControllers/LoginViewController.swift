@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
       
       GIDSignIn.sharedInstance().uiDelegate = self
       GIDSignIn.sharedInstance().delegate = self
+      //GIDSignIn.sharedInstance().signOut()
       let buttonFrame : CGRect = CGRect.init(x: 0, y: 0, width: 100, height: 50)
       let gdSignInButton = GIDSignInButton.init(frame:buttonFrame)
         gdSignInButton.center = view.center
