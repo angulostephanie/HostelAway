@@ -10,6 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource {
     
+    var homeAwayAPICLient = HomeAwayAPICLient.shared
+    var listings: ListingSearchPaginator?
+    var entries: [ListingSearchHit] = []
+    var loadingData = false;
+    
     var numberPeopleTextField: String = ""
     var locationTextField: String = ""
     var fromDateTextField: String = ""
@@ -22,8 +27,27 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.rowHeight = 100
-        print(numberPeopleTextField, locationTextField, fromDateTextField, toDateTextField, maxPriceTextField);
-        // Do any additional setup after loading the view.
+        
+        self.loadData();
+    }
+    
+    func loadData() {
+        self.loadingData = true;
+        homeAwayAPICLient.search(locationTextField: locationTextField, numberPeopleTextField: numberPeopleTextField, maxPriceTextField: maxPriceTextField, fromDateTextField: fromDateTextField, toDateTextField: toDateTextField) { (ListingSearchPaginator) in
+            guard
+                let listings = ListingSearchPaginator
+                else {
+                    print("ERROR")
+                    return
+            }
+            self.listings = listings
+            if let entries = self.listings?.entries {
+                self.entries = entries
+                self.tableView.reloadData()
+            }
+            print(self.entries)
+        }
+        self.loadingData = false;
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,14 +59,13 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     self.performSegue(withIdentifier: "homeToDetailSegue", sender: nil)
   }
     let CellIdentifier = "listing"
-    let data = ["something"]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count;
+        return entries.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! ListingTableViewCell
-        cell.titleText.text = data[indexPath.row]
+        cell.titleText.text = entries[indexPath.row].headline
         cell.accessoryType = .disclosureIndicator
         return cell
     }

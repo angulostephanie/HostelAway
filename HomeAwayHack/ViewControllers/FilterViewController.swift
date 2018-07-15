@@ -18,7 +18,6 @@ class FilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("signed in nice")
         // Do any additional setup after loading the view.
     }
 

@@ -49,20 +49,20 @@ public class HomeAwayAPICLient: NSObject {
             })
         }
     }
-    
-//    public func search(id: String, completion: @escaping (CDYelpBusiness?) -> ()) {
-//        if let url = URL(string: "https://ws.homeaway.com/public/search\(id)") {
-//            self.manager.request(url).responseObject(completionHandler: { (response: DataResponse<CDYelpBusiness>) in
-//                switch response.result {
-//                case .success(let searchResponse):
-//                    completion(searchResponse)
-//                case .failure(let error):
-//                    print("ERROR: " + String(describing: error))
-//                    completion(nil)
-//                }
-//            })
-//        }
-//    }
-
-
+//    sleeps\(numberPeopleTextField)
+    public func search(locationTextField: String, numberPeopleTextField: String, maxPriceTextField: String, fromDateTextField: String, toDateTextField: String, completion: @escaping (ListingSearchPaginator?) -> ()) {
+        if let url = URL(string: "https://ws.homeaway.com/public/search?q=\(locationTextField)&minSleeps=\(numberPeopleTextField)&maxPrice=\(maxPriceTextField)&availabilityStart=\(fromDateTextField)&availabilityEnd=\(toDateTextField)") {
+            self.manager.request(url, method: .get).responseObject(completionHandler: { (response: DataResponse<ListingSearchPaginator>) in
+                print(response)
+                switch response.result {
+                case .success(let searchResponse):
+                    print(searchResponse)
+                    completion(searchResponse)
+                case .failure(let error):
+                    print("ERROR: " + String(describing: error))
+                    completion(nil)
+                }
+            })
+        }
+    }
 }

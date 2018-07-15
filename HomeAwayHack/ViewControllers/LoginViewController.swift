@@ -16,6 +16,10 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
 
     override func viewDidLoad() {
       super.viewDidLoad()
+        
+//        homeAwayAPICLient.search(locationTextField: "austin", numberPeopleTextField: "6", maxPriceTextField: "1000", fromDateTextField: "2018-07-20", toDateTextField: "2018-07-30") { (ListingSearchPaginator) in
+//            print(ListingSearchPaginator)
+//        }
       
       GIDSignIn.sharedInstance().uiDelegate = self
       GIDSignIn.sharedInstance().delegate = self
