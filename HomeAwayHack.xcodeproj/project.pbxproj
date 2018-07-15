@@ -33,6 +33,7 @@
 		8807D07520FAC2020029B32C /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07420FAC2020029B32C /* RequestDetailViewController.swift */; };
 		8807D07720FAC4100029B32C /* BookItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07620FAC4100029B32C /* BookItViewController.swift */; };
 		8807D07920FAC5DE0029B32C /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07820FAC5DE0029B32C /* ApplyViewController.swift */; };
+		8807D07B20FAD9E70029B32C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8807D07A20FAD9E70029B32C /* GoogleService-Info.plist */; };
 		D586CC00C809CC0759F032B3 /* Pods_HomeAwayHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */; };
 		E1ACDFF20B85805085669E07 /* Pods_HomeAwayHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		8807D07420FAC2020029B32C /* RequestDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
 		8807D07620FAC4100029B32C /* BookItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItViewController.swift; sourceTree = "<group>"; };
 		8807D07820FAC5DE0029B32C /* ApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
+		8807D07A20FAD9E70029B32C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		969210B60CFB80B5379D44E1 /* Pods-HomeAwayHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.release.xcconfig"; sourceTree = "<group>"; };
 		A1302A9AC241621F5F11FCA6 /* Pods_HomeAwayHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DD7AD9490A8C72D21DBBE8 /* Pods-HomeAwayHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +155,7 @@
 		3B7E32C320FAA3BB0080A451 /* HomeAwayHack */ = {
 			isa = PBXGroup;
 			children = (
-				3B2A416B20FAD80F004350E1 /* GoogleService-Info.plist */,
+				8807D07A20FAD9E70029B32C /* GoogleService-Info.plist */,
 				3B2E3EFC20FABA8C00BE7BD9 /* Firebase */,
 				3B7E32F220FAA3EA0080A451 /* ViewControllers */,
 				3B7E32C420FAA3BC0080A451 /* AppDelegate.swift */,
@@ -333,7 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32CF20FAA3BD0080A451 /* LaunchScreen.storyboard in Resources */,
+<<<<<<< HEAD
 				3B2A416C20FAD80F004350E1 /* GoogleService-Info.plist in Resources */,
+=======
+				8807D07B20FAD9E70029B32C /* GoogleService-Info.plist in Resources */,
+>>>>>>> 1adff62ceb776db4f412260055c361788970bf65
 				3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */,
 				3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */,
 			);
