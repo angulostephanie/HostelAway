@@ -29,7 +29,9 @@ class Entry {
 }
 
 class HomeViewController: UIViewController, UITableViewDataSource {
-    
+  
+    var indicator = UIActivityIndicatorView()
+
     var homeAwayAPICLient = HomeAwayAPICLient.shared
     var listings: ListingSearchPaginator?
     var entries: [ListingSearchHit] = []
@@ -54,6 +56,8 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     func loadData() {
         self.loadingData = true;
+//        self.indicator.startAnimating()
+//        self.indicator.backgroundColor = UIColor.white
         homeAwayAPICLient.search(locationTextField: locationTextField, numberPeopleTextField: numberPeopleTextField, maxPriceTextField: maxPriceTextField, fromDateTextField: fromDateTextField, toDateTextField: toDateTextField) { (ListingSearchPaginator) in
             guard
                 let listings = ListingSearchPaginator
@@ -97,6 +101,8 @@ class HomeViewController: UIViewController, UITableViewDataSource {
             group.notify(queue: .main) {
                 self.tableView.reloadData()
             }
+//            self.indicator.stopAnimating()
+//            self.indicator.hidesWhenStopped = true
             self.loadingData = false;
         }
     }
@@ -130,6 +136,12 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                             accessoryButtonTappedForRowWith indexPath: IndexPath) {
         self.performSegue(withIdentifier: "detailViewSegue", sender: nil)
+    }
+    func activityIndicator() {
+      indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+      indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+      indicator.center = self.view.center
+      self.view.addSubview(indicator)
     }
   
     /*
