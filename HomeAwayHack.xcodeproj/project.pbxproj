@@ -17,6 +17,12 @@
 		3B7E32F620FAA4360080A451 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F520FAA4360080A451 /* HomeViewController.swift */; };
 		3B7E32F820FAA4430080A451 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F720FAA4430080A451 /* FilterViewController.swift */; };
 		3B7E32FA20FAA44B0080A451 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E32F920FAA44B0080A451 /* DetailViewController.swift */; };
+		3B96037A20FAE99000415293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B96037920FAE99000415293 /* GoogleService-Info.plist */; };
+		3B96037B20FAE99000415293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B96037920FAE99000415293 /* GoogleService-Info.plist */; };
+		3B96037C20FAE99000415293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B96037920FAE99000415293 /* GoogleService-Info.plist */; };
+		3B96037E20FAEA5500415293 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96037D20FAEA5500415293 /* TestViewController.swift */; };
+		3B96037F20FAEA5500415293 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96037D20FAEA5500415293 /* TestViewController.swift */; };
+		3B96038020FAEA5500415293 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96037D20FAEA5500415293 /* TestViewController.swift */; };
 		61023E4720FAB9D90040D9B1 /* HomeAwayAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4620FAB9D90040D9B1 /* HomeAwayAPIClient.swift */; };
 		61023E4A20FAC4010040D9B1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4920FAC4010040D9B1 /* Token.swift */; };
 		61023E4C20FAD2EB0040D9B1 /* ListingSearchPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E4B20FAD2EB0040D9B1 /* ListingSearchPaginator.swift */; };
@@ -25,7 +31,6 @@
 		61023E5420FADAA20040D9B1 /* PriceQuoteBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5320FADAA20040D9B1 /* PriceQuoteBean.swift */; };
 		61023E5620FADB130040D9B1 /* ImageFileBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61023E5520FADB130040D9B1 /* ImageFileBean.swift */; };
 		64932A08BB56987043C2F185 /* Pods_HomeAwayHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B212989F5BA943CCB9ACE2E /* Pods_HomeAwayHack.framework */; };
-		7A93A50820FAE38B00037E55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A93A50720FAE38B00037E55 /* GoogleService-Info.plist */; };
 		8807D06F20FAC1950029B32C /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D06E20FAC1950029B32C /* RequestTableViewCell.swift */; };
 		8807D07120FAC19E0029B32C /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07020FAC19E0029B32C /* ListingTableViewCell.swift */; };
 		8807D07320FAC1B20029B32C /* ViewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807D07220FAC1B20029B32C /* ViewRequestViewController.swift */; };
@@ -71,10 +76,11 @@
 		3B7E32F520FAA4360080A451 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B7E32F720FAA4430080A451 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		3B7E32F920FAA44B0080A451 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3B96037920FAE99000415293 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B96037D20FAEA5500415293 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3C59FC4C243CBDE1593692DC /* Pods-HomeAwayHackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHackUITests/Pods-HomeAwayHackUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		401F834597A84F539273409D /* Pods-HomeAwayHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayHack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayHack/Pods-HomeAwayHack.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8A7D5FF20E375114A8808E /* Pods_HomeAwayHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A93A50720FAE38B00037E55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61023E4620FAB9D90040D9B1 /* HomeAwayAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAwayAPIClient.swift; sourceTree = "<group>"; };
 		61023E4920FAC4010040D9B1 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		61023E4B20FAD2EB0040D9B1 /* ListingSearchPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingSearchPaginator.swift; sourceTree = "<group>"; };
@@ -155,7 +161,7 @@
 		3B7E32C320FAA3BB0080A451 /* HomeAwayHack */ = {
 			isa = PBXGroup;
 			children = (
-				7A93A50720FAE38B00037E55 /* GoogleService-Info.plist */,
+				3B96037920FAE99000415293 /* GoogleService-Info.plist */,
 				61023E4820FAC3F80040D9B1 /* Models */,
 				61023E4520FAB9B90040D9B1 /* API */,
 				3B2E3EFC20FABA8C00BE7BD9 /* Firebase */,
@@ -200,6 +206,7 @@
 				8807D07420FAC2020029B32C /* RequestDetailViewController.swift */,
 				8807D07620FAC4100029B32C /* BookItViewController.swift */,
 				8807D07820FAC5DE0029B32C /* ApplyViewController.swift */,
+				3B96037D20FAEA5500415293 /* TestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -359,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32CF20FAA3BD0080A451 /* LaunchScreen.storyboard in Resources */,
-				7A93A50820FAE38B00037E55 /* GoogleService-Info.plist in Resources */,
+				3B96037A20FAE99000415293 /* GoogleService-Info.plist in Resources */,
 				3B7E32CC20FAA3BD0080A451 /* Assets.xcassets in Resources */,
 				3B7E32CA20FAA3BC0080A451 /* Main.storyboard in Resources */,
 			);
@@ -369,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B96037B20FAE99000415293 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B96037C20FAE99000415293 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E32F420FAA3FA0080A451 /* LoginViewController.swift in Sources */,
+				3B96037E20FAEA5500415293 /* TestViewController.swift in Sources */,
 				3B7E32C520FAA3BC0080A451 /* AppDelegate.swift in Sources */,
 				3B7E32FA20FAA44B0080A451 /* DetailViewController.swift in Sources */,
 				61023E5420FADAA20040D9B1 /* PriceQuoteBean.swift in Sources */,
@@ -516,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B96037F20FAEA5500415293 /* TestViewController.swift in Sources */,
 				3B7E32DA20FAA3BD0080A451 /* HomeAwayHackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B96038020FAEA5500415293 /* TestViewController.swift in Sources */,
 				3B7E32E520FAA3BD0080A451 /* HomeAwayHackUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
