@@ -14,6 +14,8 @@ class ListingTableViewCell: UITableViewCell {
     @IBOutlet weak var exampleImage: UIImageView!
     @IBOutlet weak var numSpots: UILabel!
     
+    var data: ListingSearchHit? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
