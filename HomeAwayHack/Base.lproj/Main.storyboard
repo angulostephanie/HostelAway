@@ -66,11 +66,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFH-9N-KNw">
-                                                    <rect key="frame" x="320" y="34" width="34" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="View"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tc-Sl-aCG">
                                                     <rect key="frame" x="265" y="43" width="37" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,6 +79,7 @@
                                             <outlet property="exampleImage" destination="GKW-Xm-slJ" id="sfM-oP-dCr"/>
                                             <outlet property="numSpots" destination="4Tc-Sl-aCG" id="TGO-Kd-Tbj"/>
                                             <outlet property="titleText" destination="cp6-Mi-QSR" id="3OO-Mk-mO7"/>
+                                            <segue destination="tNf-vB-SPR" kind="showDetail" identifier="detailViewSegue" id="DzB-E6-khB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
