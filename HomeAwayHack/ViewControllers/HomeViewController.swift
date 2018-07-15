@@ -45,9 +45,27 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                 self.entries = entries
                 self.tableView.reloadData()
             }
-            print(self.entries)
+            
+            for entries in self.entries {
+                if let uri = entries.thumbnail?.uri {
+                    let imageURL = URL(string: uri)
+                    if let imageURL =  imageURL {
+                        self.homeAwayAPICLient.downloadImage(url: imageURL, completion: { (image, error) in
+                            guard
+                                let image = image,
+                                error == nil
+                                else {
+                                    return
+                            }
+                            DispatchQueue.main.async {
+                                print(image)
+                            }
+                        })
+                    }
+                }
+            }
+            self.loadingData = false;
         }
-        self.loadingData = false;
     }
 
     override func didReceiveMemoryWarning() {

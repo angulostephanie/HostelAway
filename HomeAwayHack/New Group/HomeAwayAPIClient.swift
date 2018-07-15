@@ -9,6 +9,8 @@
 import Alamofire
 import AlamofireObjectMapper
 
+let imageCache = NSCache<NSString, UIImage>()
+
 public class HomeAwayAPICLient: NSObject {
     static let shared = HomeAwayAPICLient()
     
@@ -49,7 +51,7 @@ public class HomeAwayAPICLient: NSObject {
             })
         }
     }
-//    sleeps\(numberPeopleTextField)
+
     public func search(locationTextField: String, numberPeopleTextField: String, maxPriceTextField: String, fromDateTextField: String, toDateTextField: String, completion: @escaping (ListingSearchPaginator?) -> ()) {
         if let url = URL(string: "https://ws.homeaway.com/public/search?q=\(locationTextField)&minSleeps=\(numberPeopleTextField)&maxPrice=\(maxPriceTextField)&availabilityStart=\(fromDateTextField)&availabilityEnd=\(toDateTextField)") {
             self.manager.request(url, method: .get).responseObject(completionHandler: { (response: DataResponse<ListingSearchPaginator>) in
@@ -64,5 +66,29 @@ public class HomeAwayAPICLient: NSObject {
                 }
             })
         }
+    }
+    
+    public func downloadImage(url: URL, completion: @escaping (UIImage?, Error?) -> ()) {
+        if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
+            completion(cachedImage, nil)
+        } else {
+            self.getDataFromUrl(url: url, completion: { (data, response, error) in
+                guard
+                    let data = data,
+                    let image = UIImage(data: data),
+                    error == nil
+                    else {
+                        return
+                }
+                imageCache.setObject(image, forKey: url.absoluteString as NSString)
+                completion(image, nil)
+            })
+        }
+    }
+    
+    public func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            completion(data, response, error)
+            }.resume()
     }
 }
